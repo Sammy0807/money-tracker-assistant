@@ -1,0 +1,20 @@
+server:
+  port: 8085
+
+spring:
+  data:
+    mongodb:
+      uri: {db connection}
+      database: AI_Assistant
+
+app:
+  ingest:
+    # default json path (override in request if you want)
+    path: ${INGEST_JSON_PATH:./finance_mock_backup.json}
+  vector:
+    indexName: vector_index       # Atlas Search index name
+    useAtlasVector: ${USE_ATLAS_VECTOR:true}  # set false to use Java fallback
+
+openai:
+  apiKey: {get this son!}     # export OPENAI_API_KEY before running
+  embeddingModel: text-embedding-3-small

@@ -1,0 +1,2151 @@
+{
+  "meta": {
+    "version": "2.0",
+    "generatedAt": "2025-09-22T09:31:19.598865Z",
+    "totalAccounts": 12,
+    "totalTransactions": 1850,
+    "dataRange": {
+      "from": "2024-01-01T00:00:00.000Z",
+      "to": "2025-09-22T23:59:59.999Z"
+    }
+  },
+  "user": {
+    "id": "660eee24-bb5c-49b1-8f2e-7f1609e81a47",
+    "email": "alice@example.com",
+    "name": "Alice Johnson",
+    "locale": "en-US",
+    "currency": "USD",
+    "timezone": "America/Chicago",
+    "featureFlagsJson": "{\"newDashboard\": true, \"betaRules\": true, \"notificationsSSE\": true}",
+    "createdAt": "2024-08-18T09:31:19.598865Z",
+    "updatedAt": "2025-09-22T09:21:19.598865Z",
+    "preferences": {
+      "defaultBudgetPeriod": "monthly",
+      "primaryCurrency": "USD",
+      "notifications": {
+        "email": true,
+        "push": true,
+        "budgetAlerts": true,
+        "goalUpdates": true
+      },
+      "privacy": {
+        "shareAnalytics": false,
+        "dataRetention": "5years"
+      }
+    }
+  },
+  "institutions": [
+    {
+      "id": "70dea308-a0eb-441f-8f57-397aad9d5122",
+      "name": "Chase",
+      "logo": "chase.svg",
+      "type": "BANK",
+      "website": "https://chase.com",
+      "accountsCount": 3
+    },
+    {
+      "id": "a5548627-5cb3-4c27-beea-913b6a34a235",
+      "name": "Bank of America",
+      "logo": "boa.svg",
+      "type": "BANK",
+      "website": "https://bankofamerica.com",
+      "accountsCount": 2
+    },
+    {
+      "id": "d0f442e3-361b-48ce-8cfa-91afe0aa1d5b",
+      "name": "Fidelity",
+      "logo": "fidelity.svg",
+      "type": "INVESTMENT",
+      "website": "https://fidelity.com",
+      "accountsCount": 3
+    },
+    {
+      "id": "8b64306f-4b0c-4667-8c8e-e7823b33ac92",
+      "name": "Capital One",
+      "logo": "capitalone.svg",
+      "type": "CREDIT",
+      "website": "https://capitalone.com",
+      "accountsCount": 2
+    },
+    {
+      "id": "65a899f9-61c4-4ed4-b2aa-50b134b8f3b2",
+      "name": "Wells Fargo",
+      "logo": "wellsfargo.svg",
+      "type": "BANK",
+      "website": "https://wellsfargo.com",
+      "accountsCount": 1
+    },
+    {
+      "id": "f2e8a6b4-3c1d-4a7b-9e2f-5d6c8e9f1a2b",
+      "name": "American Express",
+      "logo": "amex.svg",
+      "type": "CREDIT",
+      "website": "https://americanexpress.com",
+      "accountsCount": 1
+    }
+  ],
+  "accounts": [
+    {
+      "id": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+      "name": "Everyday Checking",
+      "institution": "Chase",
+      "institutionId": "70dea308-a0eb-441f-8f57-397aad9d5122",
+      "type": "CHECKING",
+      "currency": "USD",
+      "balanceCents": 1245620,
+      "availableBalanceCents": 1245620,
+      "accountNumber": "****1234",
+      "routingNumber": "021000021",
+      "isActive": true,
+      "openedDate": "2022-03-15T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:30:00.000Z",
+      "interestRate": 0.01,
+      "minimumBalance": 100,
+      "overdraftLimit": 0
+    },
+    {
+      "id": "8a7d1b2c-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+      "name": "Premium Savings",
+      "institution": "Chase",
+      "institutionId": "70dea308-a0eb-441f-8f57-397aad9d5122",
+      "type": "SAVINGS",
+      "currency": "USD",
+      "balanceCents": 2847592,
+      "availableBalanceCents": 2847592,
+      "accountNumber": "****5678",
+      "isActive": true,
+      "openedDate": "2022-03-15T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:30:00.000Z",
+      "interestRate": 4.25,
+      "minimumBalance": 1000
+    },
+    {
+      "id": "b9c8d7e6-f5a4-b3c2-d1e0-f9e8d7c6b5a4",
+      "name": "Freedom Unlimited",
+      "institution": "Chase",
+      "institutionId": "70dea308-a0eb-441f-8f57-397aad9d5122",
+      "type": "CREDIT",
+      "currency": "USD",
+      "balanceCents": -89247,
+      "availableBalanceCents": 410753,
+      "accountNumber": "****9012",
+      "isActive": true,
+      "openedDate": "2021-08-10T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:30:00.000Z",
+      "creditLimit": 500000,
+      "interestRate": 18.99,
+      "minimumPayment": 2500,
+      "dueDate": "2025-10-15T00:00:00.000Z"
+    },
+    {
+      "id": "c5d4e3f2-a1b0-c9d8-e7f6-a5b4c3d2e1f0",
+      "name": "Advantage Plus Banking",
+      "institution": "Bank of America",
+      "institutionId": "a5548627-5cb3-4c27-beea-913b6a34a235",
+      "type": "CHECKING",
+      "currency": "USD",
+      "balanceCents": 876543,
+      "availableBalanceCents": 876543,
+      "accountNumber": "****3456",
+      "isActive": true,
+      "openedDate": "2023-01-20T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:25:00.000Z",
+      "interestRate": 0.01,
+      "minimumBalance": 25,
+      "overdraftLimit": 100000
+    },
+    {
+      "id": "d6e5f4a3-b2c1-d0e9-f8a7-b6c5d4e3f2a1",
+      "name": "High Yield Savings",
+      "institution": "Bank of America",
+      "institutionId": "a5548627-5cb3-4c27-beea-913b6a34a235",
+      "type": "SAVINGS",
+      "currency": "USD",
+      "balanceCents": 1567890,
+      "availableBalanceCents": 1567890,
+      "accountNumber": "****7890",
+      "isActive": true,
+      "openedDate": "2023-01-20T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:25:00.000Z",
+      "interestRate": 4.5,
+      "minimumBalance": 500
+    },
+    {
+      "id": "e7f6a5b4-c3d2-e1f0-a9b8-c7d6e5f4a3b2",
+      "name": "Traditional IRA",
+      "institution": "Fidelity",
+      "institutionId": "d0f442e3-361b-48ce-8cfa-91afe0aa1d5b",
+      "type": "INVESTMENT",
+      "currency": "USD",
+      "balanceCents": 4523678,
+      "availableBalanceCents": 4523678,
+      "accountNumber": "****4567",
+      "isActive": true,
+      "openedDate": "2020-04-15T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T06:00:00.000Z",
+      "accountType": "IRA",
+      "taxAdvantaged": true
+    },
+    {
+      "id": "f8a7b6c5-d4e3-f2a1-b0c9-d8e7f6a5b4c3",
+      "name": "Roth IRA",
+      "institution": "Fidelity",
+      "institutionId": "d0f442e3-361b-48ce-8cfa-91afe0aa1d5b",
+      "type": "INVESTMENT",
+      "currency": "USD",
+      "balanceCents": 3487291,
+      "availableBalanceCents": 3487291,
+      "accountNumber": "****8901",
+      "isActive": true,
+      "openedDate": "2021-01-10T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T06:00:00.000Z",
+      "accountType": "ROTH_IRA",
+      "taxAdvantaged": true
+    },
+    {
+      "id": "a9b8c7d6-e5f4-a3b2-c1d0-e9f8a7b6c5d4",
+      "name": "401(k)",
+      "institution": "Fidelity",
+      "institutionId": "d0f442e3-361b-48ce-8cfa-91afe0aa1d5b",
+      "type": "INVESTMENT",
+      "currency": "USD",
+      "balanceCents": 8976543,
+      "availableBalanceCents": 8976543,
+      "accountNumber": "****2345",
+      "isActive": true,
+      "openedDate": "2019-06-01T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T06:00:00.000Z",
+      "accountType": "401K",
+      "taxAdvantaged": true,
+      "employerMatch": true,
+      "vestingSchedule": "5_year_graded"
+    },
+    {
+      "id": "b0c9d8e7-f6a5-b4c3-d2e1-f0a9b8c7d6e5",
+      "name": "Venture Rewards",
+      "institution": "Capital One",
+      "institutionId": "8b64306f-4b0c-4667-8c8e-e7823b33ac92",
+      "type": "CREDIT",
+      "currency": "USD",
+      "balanceCents": -245780,
+      "availableBalanceCents": 254220,
+      "accountNumber": "****6789",
+      "isActive": true,
+      "openedDate": "2022-11-05T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:20:00.000Z",
+      "creditLimit": 500000,
+      "interestRate": 21.99,
+      "minimumPayment": 4916,
+      "dueDate": "2025-10-08T00:00:00.000Z",
+      "rewardsProgram": "Miles"
+    },
+    {
+      "id": "c1d0e9f8-a7b6-c5d4-e3f2-a1b0c9d8e7f6",
+      "name": "Quicksilver",
+      "institution": "Capital One",
+      "institutionId": "8b64306f-4b0c-4667-8c8e-e7823b33ac92",
+      "type": "CREDIT",
+      "currency": "USD",
+      "balanceCents": -156432,
+      "availableBalanceCents": 343568,
+      "accountNumber": "****0123",
+      "isActive": true,
+      "openedDate": "2021-03-18T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:20:00.000Z",
+      "creditLimit": 500000,
+      "interestRate": 19.99,
+      "minimumPayment": 3129,
+      "dueDate": "2025-10-20T00:00:00.000Z",
+      "rewardsProgram": "Cashback"
+    },
+    {
+      "id": "d2e1f0a9-b8c7-d6e5-f4a3-b2c1d0e9f8a7",
+      "name": "Platinum Checking",
+      "institution": "Wells Fargo",
+      "institutionId": "65a899f9-61c4-4ed4-b2aa-50b134b8f3b2",
+      "type": "CHECKING",
+      "currency": "USD",
+      "balanceCents": 432198,
+      "availableBalanceCents": 432198,
+      "accountNumber": "****4567",
+      "isActive": true,
+      "openedDate": "2024-02-01T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:15:00.000Z",
+      "interestRate": 0.01,
+      "minimumBalance": 500,
+      "overdraftLimit": 50000
+    },
+    {
+      "id": "e3f2a1b0-c9d8-e7f6-a5b4-c3d2e1f0a9b8",
+      "name": "Gold Card",
+      "institution": "American Express",
+      "institutionId": "f2e8a6b4-3c1d-4a7b-9e2f-5d6c8e9f1a2b",
+      "type": "CREDIT",
+      "currency": "USD",
+      "balanceCents": -198765,
+      "availableBalanceCents": 301235,
+      "accountNumber": "****8901",
+      "isActive": true,
+      "openedDate": "2020-09-12T00:00:00.000Z",
+      "lastSyncAt": "2025-09-22T08:10:00.000Z",
+      "creditLimit": 500000,
+      "interestRate": 22.99,
+      "minimumPayment": 3975,
+      "dueDate": "2025-10-12T00:00:00.000Z",
+      "rewardsProgram": "Membership Rewards",
+      "annualFee": 25000
+    },
+    {
+      "id": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+      "name": "High-Yield Savings",
+      "institution": "Bank of America",
+      "type": "SAVINGS",
+      "currency": "USD",
+      "balanceCents": -2389553,
+      "createdAt": "2024-11-16T09:31:19.598865Z",
+      "updatedAt": "2025-09-21T09:31:19.598865Z"
+    },
+    {
+      "id": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+      "name": "Travel Rewards Visa",
+      "institution": "Fidelity",
+      "type": "CREDIT",
+      "currency": "USD",
+      "balanceCents": -2560593,
+      "createdAt": "2025-04-11T09:31:19.598865Z",
+      "updatedAt": "2025-09-17T09:31:19.598865Z"
+    },
+    {
+      "id": "9c2d9c3f-fb0e-48bf-93ef-8db18871d2de",
+      "name": "Auto Loan",
+      "institution": "Capital One",
+      "type": "LOAN",
+      "currency": "USD",
+      "balanceCents": -81482,
+      "createdAt": "2025-04-26T09:31:19.598865Z",
+      "updatedAt": "2025-09-18T09:31:19.598865Z"
+    },
+    {
+      "id": "bac85e6f-acfe-447b-9f87-34dc75f51568",
+      "name": "Brokerage",
+      "institution": "Wells Fargo",
+      "type": "INVESTMENT",
+      "currency": "USD",
+      "balanceCents": 1084834,
+      "createdAt": "2025-06-22T09:31:19.598865Z",
+      "updatedAt": "2025-09-22T09:31:19.598865Z"
+    },
+    {
+      "id": "48c7c036-d96a-4749-bc02-dc1bbf9e8263",
+      "name": "Emergency Cash",
+      "institution": "Chase",
+      "type": "CASH",
+      "currency": "USD",
+      "balanceCents": 99123,
+      "createdAt": "2024-12-13T09:31:19.598865Z",
+      "updatedAt": "2025-09-21T09:31:19.598865Z"
+    },
+    {
+      "id": "3b1ed26e-e2cc-4d6a-b52e-127cfd7e3084",
+      "name": "Naira Account",
+      "institution": "Bank of America",
+      "type": "CHECKING",
+      "currency": "NGN",
+      "balanceCents": 314951,
+      "createdAt": "2023-11-16T09:31:19.598865Z",
+      "updatedAt": "2025-09-22T09:31:19.598865Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "a07733c0-6d63-45cd-94fb-8e0a72db85fd",
+      "name": "Income",
+      "type": "INCOME",
+      "parentId": null
+    },
+    {
+      "id": "baafab08-1dca-450a-8b17-8866a844f9df",
+      "name": "Salary",
+      "type": "INCOME",
+      "parentId": null
+    },
+    {
+      "id": "7a247f1d-9d9d-4d7a-96b7-1c1518b36519",
+      "name": "Bonus",
+      "type": "INCOME",
+      "parentId": null
+    },
+    {
+      "id": "5978f4ef-da1e-468f-adf2-427f6fa8c419",
+      "name": "Investments",
+      "type": "INCOME",
+      "parentId": null
+    },
+    {
+      "id": "dad76bc5-6f03-4f37-bb5a-d6465cde68cd",
+      "name": "Housing",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "e132b4ca-199a-4936-9e58-1f60c09dce31",
+      "name": "Transportation",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "11eb6048-3b7e-46bd-ba23-9d6af6dde200",
+      "name": "Groceries",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "760cb299-624a-4a36-9f66-70fc100aed02",
+      "name": "Dining",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "e3774cdd-1cff-48ed-a758-0fc479f4c227",
+      "name": "Utilities",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "a5211803-e7de-4b7c-b1a0-ab1351891b5a",
+      "name": "Healthcare",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "fba15cae-e7ba-4829-939a-136c58cae86b",
+      "name": "Entertainment",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "e8a05c8c-49b9-41e2-9055-02302835ecc7",
+      "name": "Travel",
+      "type": "EXPENSE",
+      "parentId": null
+    },
+    {
+      "id": "e7fd25d5-12ad-4bf2-8ee8-a31ff41a7dd9",
+      "name": "Transfers",
+      "type": "META",
+      "parentId": null
+    }
+  ],
+  "transactions": {
+    "paged": {
+      "page": 0,
+      "size": 50,
+      "totalElements": 626,
+      "totalPages": 13,
+      "content": [
+        {
+          "id": "c0a6fe1b-34b4-4b37-9f42-e416c18aa903",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -19516,
+          "currency": "USD",
+          "merchant": "CVS",
+          "category": "Groceries",
+          "occurredAt": "2025-09-21T20:53:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-21T11:31:19.598865Z",
+          "updatedAt": "2025-09-21T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "61dcf5d1-3a5f-4725-ad96-38193e60768e",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -17054,
+          "currency": "USD",
+          "merchant": "Netflix",
+          "category": "Groceries",
+          "occurredAt": "2025-09-21T20:09:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-21T11:31:19.598865Z",
+          "updatedAt": "2025-09-21T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "d42e595b-8e9e-4770-b925-168d08f19d6a",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -17917,
+          "currency": "USD",
+          "merchant": "United Airlines",
+          "category": "Transportation",
+          "occurredAt": "2025-09-21T10:17:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-21T11:31:19.598865Z",
+          "updatedAt": "2025-09-21T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "55b7dc95-eaee-4c4d-9b13-80ebf6ed3250",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -2281,
+          "currency": "USD",
+          "merchant": "Uber",
+          "category": "Groceries",
+          "occurredAt": "2025-09-20T14:32:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-20T11:31:19.598865Z",
+          "updatedAt": "2025-09-20T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "bb878440-bed8-484d-bf89-2a238a8c8975",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -16718,
+          "currency": "USD",
+          "merchant": "Lyft",
+          "category": "Transportation",
+          "occurredAt": "2025-09-20T14:27:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-20T11:31:19.598865Z",
+          "updatedAt": "2025-09-20T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "86e4b27d-9be8-4810-b32f-5090e8245812",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -4500,
+          "currency": "USD",
+          "merchant": "Gym Co",
+          "category": "Entertainment",
+          "occurredAt": "2025-09-20T09:15:19.598865Z",
+          "note": "Gym",
+          "createdAt": "2025-09-20T10:31:19.598865Z",
+          "updatedAt": "2025-09-20T10:36:19.598865Z",
+          "tags": [
+            "recurring"
+          ]
+        },
+        {
+          "id": "98d0a829-ae75-4d03-b6e8-96c00fec0637",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -18924,
+          "currency": "USD",
+          "merchant": "Chipotle",
+          "category": "Groceries",
+          "occurredAt": "2025-09-17T13:34:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-17T11:31:19.598865Z",
+          "updatedAt": "2025-09-17T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "b988b1eb-6566-4c92-9dfc-71d603a5370b",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -15734,
+          "currency": "USD",
+          "merchant": "Lyft",
+          "category": "Groceries",
+          "occurredAt": "2025-09-17T09:01:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-17T11:31:19.598865Z",
+          "updatedAt": "2025-09-17T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "618a12ad-8bb5-4292-a987-e0af05f03b8d",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -9000,
+          "currency": "USD",
+          "merchant": "T\u2011Mobile",
+          "category": "Utilities",
+          "occurredAt": "2025-09-15T09:15:19.598865Z",
+          "note": "Phone",
+          "createdAt": "2025-09-15T10:31:19.598865Z",
+          "updatedAt": "2025-09-15T10:36:19.598865Z",
+          "tags": [
+            "recurring"
+          ]
+        },
+        {
+          "id": "1f5f2f04-6773-49dc-bc1e-b558784fedd4",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -8199,
+          "currency": "USD",
+          "merchant": "Target",
+          "category": "Dining",
+          "occurredAt": "2025-09-14T18:38:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-14T11:31:19.598865Z",
+          "updatedAt": "2025-09-14T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "537142e3-e7e6-4072-a50a-ade86c5b3b9d",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -24805,
+          "currency": "USD",
+          "merchant": "Starbucks",
+          "category": "Dining",
+          "occurredAt": "2025-09-12T12:41:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-12T11:31:19.598865Z",
+          "updatedAt": "2025-09-12T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "40f4d816-8a4b-432e-ba4d-4756e7458cd4",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -21874,
+          "currency": "USD",
+          "merchant": "Apple",
+          "category": "Groceries",
+          "occurredAt": "2025-09-12T11:33:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-12T11:31:19.598865Z",
+          "updatedAt": "2025-09-12T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "cd41d16e-5093-415c-8e75-590085d12b39",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -12883,
+          "currency": "USD",
+          "merchant": "T\u2011Mobile",
+          "category": "Dining",
+          "occurredAt": "2025-09-11T14:20:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-11T11:31:19.598865Z",
+          "updatedAt": "2025-09-11T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "5342bc6b-05b8-495c-8a38-5ff31ab5188d",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -21422,
+          "currency": "USD",
+          "merchant": "Whole Foods",
+          "category": "Groceries",
+          "occurredAt": "2025-09-11T11:35:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-11T11:31:19.598865Z",
+          "updatedAt": "2025-09-11T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "5d78fba8-bcb6-4a60-8086-300343516d2e",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -7418,
+          "currency": "USD",
+          "merchant": "Whole Foods",
+          "category": "Transportation",
+          "occurredAt": "2025-09-11T09:08:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-11T11:31:19.598865Z",
+          "updatedAt": "2025-09-11T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "a94fccd3-aa87-45ff-b0e6-e845fecd249c",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -7281,
+          "currency": "USD",
+          "merchant": "CVS",
+          "category": "Dining",
+          "occurredAt": "2025-09-10T19:09:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-10T11:31:19.598865Z",
+          "updatedAt": "2025-09-10T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "ee4eb964-db92-4503-a425-650545a8a087",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -7000,
+          "currency": "USD",
+          "merchant": "AT&T",
+          "category": "Utilities",
+          "occurredAt": "2025-09-10T09:15:19.598865Z",
+          "note": "Internet",
+          "createdAt": "2025-09-10T10:31:19.598865Z",
+          "updatedAt": "2025-09-10T10:36:19.598865Z",
+          "tags": [
+            "recurring"
+          ]
+        },
+        {
+          "id": "e362b913-ae25-4905-b4e7-eb82f261a9a1",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -24979,
+          "currency": "USD",
+          "merchant": "Shell Fuel",
+          "category": "Dining",
+          "occurredAt": "2025-09-09T18:43:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-09T11:31:19.598865Z",
+          "updatedAt": "2025-09-09T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "6054f016-855f-44c9-ac90-1aaa3c52d407",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -18757,
+          "currency": "USD",
+          "merchant": "H\u2011E\u2011B",
+          "category": "Groceries",
+          "occurredAt": "2025-09-09T17:41:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-09T11:31:19.598865Z",
+          "updatedAt": "2025-09-09T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "111030fa-0350-4653-b42a-94ce5a9858b0",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -11558,
+          "currency": "USD",
+          "merchant": "Walmart",
+          "category": "Groceries",
+          "occurredAt": "2025-09-08T21:27:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-08T11:31:19.598865Z",
+          "updatedAt": "2025-09-08T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "bfb716c2-800e-432f-99c0-e235cda7b6a6",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -2620,
+          "currency": "USD",
+          "merchant": "Spotify",
+          "category": "Groceries",
+          "occurredAt": "2025-09-08T14:05:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-08T11:31:19.598865Z",
+          "updatedAt": "2025-09-08T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "70ee6172-7e3c-45d4-9998-51be48e184de",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -3681,
+          "currency": "USD",
+          "merchant": "AT&T",
+          "category": "Entertainment",
+          "occurredAt": "2025-09-08T13:56:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-08T11:31:19.598865Z",
+          "updatedAt": "2025-09-08T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "1ec82b48-8779-44f2-a481-6aa27b4c3ee8",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -19753,
+          "currency": "USD",
+          "merchant": "Spotify",
+          "category": "Groceries",
+          "occurredAt": "2025-09-07T16:43:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-07T11:31:19.598865Z",
+          "updatedAt": "2025-09-07T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "d7f0cde9-d062-4fa3-a228-5a26c7b24cab",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -23219,
+          "currency": "USD",
+          "merchant": "Lyft",
+          "category": "Groceries",
+          "occurredAt": "2025-09-03T11:27:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-03T11:31:19.598865Z",
+          "updatedAt": "2025-09-03T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "e61af9e2-5a3c-47ad-ada7-1c090e80ae02",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -21563,
+          "currency": "USD",
+          "merchant": "Exxon",
+          "category": "Dining",
+          "occurredAt": "2025-09-03T08:25:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-03T11:31:19.598865Z",
+          "updatedAt": "2025-09-03T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "bfc72004-cc6b-4f4b-9215-9b14a53c3e50",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -9279,
+          "currency": "USD",
+          "merchant": "Whole Foods",
+          "category": "Entertainment",
+          "occurredAt": "2025-09-02T18:23:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-02T11:31:19.598865Z",
+          "updatedAt": "2025-09-02T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "bb95be10-c799-493c-b067-60cf54e032fa",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -22863,
+          "currency": "USD",
+          "merchant": "Shell Fuel",
+          "category": "Groceries",
+          "occurredAt": "2025-09-02T18:19:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-02T11:31:19.598865Z",
+          "updatedAt": "2025-09-02T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "2ef4a10f-b189-4309-a202-5c2db55144b3",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -5476,
+          "currency": "USD",
+          "merchant": "Chick\u2011fil\u2011A",
+          "category": "Groceries",
+          "occurredAt": "2025-09-02T15:00:19.598865Z",
+          "note": "",
+          "createdAt": "2025-09-02T11:31:19.598865Z",
+          "updatedAt": "2025-09-02T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "021081ee-1d22-48d7-a793-897438844956",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -180000,
+          "currency": "USD",
+          "merchant": "Landlord LLC",
+          "category": "Housing",
+          "occurredAt": "2025-09-01T09:15:19.598865Z",
+          "note": "Rent",
+          "createdAt": "2025-09-01T10:31:19.598865Z",
+          "updatedAt": "2025-09-01T10:36:19.598865Z",
+          "tags": [
+            "recurring"
+          ]
+        },
+        {
+          "id": "922b218b-ee4a-4a77-8a7b-3df9e78c3d2c",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": 450000,
+          "currency": "USD",
+          "merchant": "Employer Inc",
+          "category": "Salary",
+          "occurredAt": "2025-09-01T09:15:19.598865Z",
+          "note": "Salary",
+          "createdAt": "2025-09-01T10:31:19.598865Z",
+          "updatedAt": "2025-09-01T10:36:19.598865Z",
+          "tags": [
+            "recurring"
+          ]
+        },
+        {
+          "id": "a8ddeabb-f3c9-4c25-a1d6-5e1691fe3ce8",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -19237,
+          "currency": "USD",
+          "merchant": "Shell Fuel",
+          "category": "Dining",
+          "occurredAt": "2025-08-31T17:54:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-31T11:31:19.598865Z",
+          "updatedAt": "2025-08-31T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "27737896-a240-4467-ba9d-0a851f581fda",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -22665,
+          "currency": "USD",
+          "merchant": "Lyft",
+          "category": "Entertainment",
+          "occurredAt": "2025-08-31T08:02:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-31T11:31:19.598865Z",
+          "updatedAt": "2025-08-31T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "277d34b5-6259-477e-98b8-c4a4da73e733",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -12038,
+          "currency": "USD",
+          "merchant": "Whole Foods",
+          "category": "Transportation",
+          "occurredAt": "2025-08-30T20:34:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-30T11:31:19.598865Z",
+          "updatedAt": "2025-08-30T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "028057d5-2563-48af-9446-d97f4b84e2a1",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -24309,
+          "currency": "USD",
+          "merchant": "Whole Foods",
+          "category": "Dining",
+          "occurredAt": "2025-08-30T19:29:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-30T11:31:19.598865Z",
+          "updatedAt": "2025-08-30T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "745dbd19-7a1f-4131-8bb6-27c9cb3b2536",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -14378,
+          "currency": "USD",
+          "merchant": "Netflix",
+          "category": "Groceries",
+          "occurredAt": "2025-08-30T15:17:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-30T11:31:19.598865Z",
+          "updatedAt": "2025-08-30T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "d0a19d99-c5fe-494f-ac12-5ae8616eecd1",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -21062,
+          "currency": "USD",
+          "merchant": "Uber",
+          "category": "Dining",
+          "occurredAt": "2025-08-29T20:05:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-29T11:31:19.598865Z",
+          "updatedAt": "2025-08-29T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "8d5bec41-f6ea-4546-a7f9-a92114a5493d",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -21022,
+          "currency": "USD",
+          "merchant": "Amazon",
+          "category": "Groceries",
+          "occurredAt": "2025-08-29T18:26:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-29T11:31:19.598865Z",
+          "updatedAt": "2025-08-29T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "c9142597-5947-44f8-995c-d730ef776515",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -9416,
+          "currency": "USD",
+          "merchant": "City Utilities",
+          "category": "Dining",
+          "occurredAt": "2025-08-29T13:29:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-29T11:31:19.598865Z",
+          "updatedAt": "2025-08-29T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "d9368fd6-809b-4796-b5d3-4e9931bbf92f",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -10854,
+          "currency": "USD",
+          "merchant": "Spotify",
+          "category": "Groceries",
+          "occurredAt": "2025-08-28T20:53:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-28T11:31:19.598865Z",
+          "updatedAt": "2025-08-28T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "b20a6c62-86da-49de-b738-2ff758071227",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -9387,
+          "currency": "USD",
+          "merchant": "CVS",
+          "category": "Healthcare",
+          "occurredAt": "2025-08-27T10:44:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-27T11:31:19.598865Z",
+          "updatedAt": "2025-08-27T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "839bc2e8-0ad2-4950-91ba-3a0a3454aa5e",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -9060,
+          "currency": "USD",
+          "merchant": "Best Buy",
+          "category": "Groceries",
+          "occurredAt": "2025-08-25T18:52:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-25T11:31:19.598865Z",
+          "updatedAt": "2025-08-25T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "606d4905-abda-49d8-93e8-b89771433407",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -17954,
+          "currency": "USD",
+          "merchant": "Exxon",
+          "category": "Groceries",
+          "occurredAt": "2025-08-25T13:45:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-25T11:31:19.598865Z",
+          "updatedAt": "2025-08-25T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "767b8de4-e267-4852-9eb1-7ddb6d256f60",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -8064,
+          "currency": "USD",
+          "merchant": "Netflix",
+          "category": "Transportation",
+          "occurredAt": "2025-08-24T20:47:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-24T11:31:19.598865Z",
+          "updatedAt": "2025-08-24T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "6ca65473-0b3f-4ece-9333-c84ad2130d93",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -7070,
+          "currency": "USD",
+          "merchant": "Netflix",
+          "category": "Transportation",
+          "occurredAt": "2025-08-24T20:03:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-24T11:31:19.598865Z",
+          "updatedAt": "2025-08-24T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "324d911b-52ad-4a94-bea8-0a5dcab73a89",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -23589,
+          "currency": "USD",
+          "merchant": "United Airlines",
+          "category": "Transportation",
+          "occurredAt": "2025-08-24T18:27:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-24T11:31:19.598865Z",
+          "updatedAt": "2025-08-24T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "67af7737-b1f7-449e-8193-47eef54e92fc",
+          "accountId": "ca19bbd9-fa55-4b65-93d4-660bb991ee4d",
+          "amountCents": -1356,
+          "currency": "USD",
+          "merchant": "Chick\u2011fil\u2011A",
+          "category": "Entertainment",
+          "occurredAt": "2025-08-22T12:22:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-22T11:31:19.598865Z",
+          "updatedAt": "2025-08-22T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "86aa651a-fd0c-4284-9f2f-124d040da9ec",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -18096,
+          "currency": "USD",
+          "merchant": "T\u2011Mobile",
+          "category": "Groceries",
+          "occurredAt": "2025-08-20T16:52:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-20T11:31:19.598865Z",
+          "updatedAt": "2025-08-20T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "5ad67915-cc82-4137-8301-ca47ace7c98c",
+          "accountId": "c2bdc423-71de-4aab-a4e2-329fef75886c",
+          "amountCents": -16530,
+          "currency": "USD",
+          "merchant": "Costco",
+          "category": "Transportation",
+          "occurredAt": "2025-08-20T16:07:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-20T11:31:19.598865Z",
+          "updatedAt": "2025-08-20T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "0d17328b-94bb-4a16-961a-9d4f295a50c2",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -14762,
+          "currency": "USD",
+          "merchant": "Costco",
+          "category": "Transportation",
+          "occurredAt": "2025-08-20T11:27:19.598865Z",
+          "note": "",
+          "createdAt": "2025-08-20T11:31:19.598865Z",
+          "updatedAt": "2025-08-20T11:36:19.598865Z",
+          "tags": []
+        },
+        {
+          "id": "0ca7b7c6-8975-474d-bf42-4502c34f654d",
+          "accountId": "ce3c254f-a337-4f7f-ba75-e1e75fc5cf35",
+          "amountCents": -4500,
+          "currency": "USD",
+          "merchant": "Gym Co",
+          "category": "Entertainment",
+          "occurredAt": "2025-08-20T09:15:19.598865Z",
+          "note": "Gym",
+          "createdAt": "2025-08-20T10:31:19.598865Z",
+          "updatedAt": "2025-08-20T10:36:19.598865Z",
+          "tags": [
+            "recurring"
+          ]
+        }
+      ]
+    },
+    "allSampleCount": 626
+  },
+  "budget": {
+    "summaries": [
+      {
+        "month": "2024-09",
+        "incomeCents": 0,
+        "expenseCents": 190073,
+        "savingsRate": 0.0,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 14058
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 5629
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 87641
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 0
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 0
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 40843
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 12703
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 29199
+          }
+        ]
+      },
+      {
+        "month": "2024-10",
+        "incomeCents": 450000,
+        "expenseCents": 701534,
+        "savingsRate": -0.559,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 191977
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 23980
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 151002
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 53048
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 78845
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 3106
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 19576
+          }
+        ]
+      },
+      {
+        "month": "2024-11",
+        "incomeCents": 450000,
+        "expenseCents": 893672,
+        "savingsRate": -0.9859,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 188814
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 111611
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 285450
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 40597
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 47229
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 6101
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 33870
+          }
+        ]
+      },
+      {
+        "month": "2024-12",
+        "incomeCents": 450000,
+        "expenseCents": 963560,
+        "savingsRate": -1.1412,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 252818
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 118269
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 235161
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 51221
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 85998
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 24093
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 16000
+          }
+        ]
+      },
+      {
+        "month": "2025-01",
+        "incomeCents": 450000,
+        "expenseCents": 895902,
+        "savingsRate": -0.9909,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 184667
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 96290
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 220310
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 0
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 143671
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 15200
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 55764
+          }
+        ]
+      },
+      {
+        "month": "2025-02",
+        "incomeCents": 450000,
+        "expenseCents": 788046,
+        "savingsRate": -0.7512,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 153352
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 31508
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 253293
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 29355
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 63384
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 25468
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 51686
+          }
+        ]
+      },
+      {
+        "month": "2025-03",
+        "incomeCents": 450000,
+        "expenseCents": 839420,
+        "savingsRate": -0.8654,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 166185
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 97211
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 213430
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 7579
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 92043
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 49424
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 33548
+          }
+        ]
+      },
+      {
+        "month": "2025-04",
+        "incomeCents": 450000,
+        "expenseCents": 727606,
+        "savingsRate": -0.6169,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 155693
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 37000
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 172209
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 23929
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 101324
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 16559
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 40892
+          }
+        ]
+      },
+      {
+        "month": "2025-05",
+        "incomeCents": 450000,
+        "expenseCents": 784415,
+        "savingsRate": -0.7431,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 109831
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 53384
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 234242
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 35103
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 111516
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 31031
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 29308
+          }
+        ]
+      },
+      {
+        "month": "2025-06",
+        "incomeCents": 450000,
+        "expenseCents": 812357,
+        "savingsRate": -0.8052,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 184811
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 70542
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 175689
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 25314
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 104386
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 16771
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 54844
+          }
+        ]
+      },
+      {
+        "month": "2025-07",
+        "incomeCents": 450000,
+        "expenseCents": 875465,
+        "savingsRate": -0.9455,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 155603
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 119647
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 235412
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 0
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 106985
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 43591
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 34227
+          }
+        ]
+      },
+      {
+        "month": "2025-08",
+        "incomeCents": 450000,
+        "expenseCents": 860209,
+        "savingsRate": -0.9116,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 203178
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 70649
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 244587
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 9387
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 95315
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 24974
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 32119
+          }
+        ]
+      },
+      {
+        "month": "2025-09",
+        "incomeCents": 450000,
+        "expenseCents": 576274,
+        "savingsRate": -0.2806,
+        "categories": [
+          {
+            "name": "Dining",
+            "limitCents": 30000,
+            "actualCents": 99710
+          },
+          {
+            "name": "Entertainment",
+            "limitCents": 12000,
+            "actualCents": 17460
+          },
+          {
+            "name": "Groceries",
+            "limitCents": 60000,
+            "actualCents": 221051
+          },
+          {
+            "name": "Healthcare",
+            "limitCents": 15000,
+            "actualCents": 0
+          },
+          {
+            "name": "Housing",
+            "limitCents": 180000,
+            "actualCents": 180000
+          },
+          {
+            "name": "Transportation",
+            "limitCents": 20000,
+            "actualCents": 42053
+          },
+          {
+            "name": "Travel",
+            "limitCents": 30000,
+            "actualCents": 0
+          },
+          {
+            "name": "Utilities",
+            "limitCents": 20000,
+            "actualCents": 16000
+          }
+        ]
+      }
+    ],
+    "limits": [
+      {
+        "month": "2024-09",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2024-10",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2024-11",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2024-12",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-01",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-02",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-03",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-04",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-05",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-06",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-07",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-08",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      },
+      {
+        "month": "2025-09",
+        "limits": {
+          "Groceries": 60000,
+          "Dining": 30000,
+          "Transportation": 20000,
+          "Entertainment": 12000,
+          "Healthcare": 15000,
+          "Utilities": 20000,
+          "Travel": 30000,
+          "Housing": 180000
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "kpis": [
+      {
+        "name": "Net Worth",
+        "value": -2539959
+      },
+      {
+        "name": "Monthly Savings Rate",
+        "value": -0.2806,
+        "delta": 0.631
+      },
+      {
+        "name": "Runway (months)",
+        "value": -20.46
+      },
+      {
+        "name": "Avg. Daily Spend (30d)",
+        "value": 26924.5
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2024-09",
+        "incomeCents": 0,
+        "expenseCents": 190073
+      },
+      {
+        "month": "2024-10",
+        "incomeCents": 450000,
+        "expenseCents": 701534
+      },
+      {
+        "month": "2024-11",
+        "incomeCents": 450000,
+        "expenseCents": 893672
+      },
+      {
+        "month": "2024-12",
+        "incomeCents": 450000,
+        "expenseCents": 963560
+      },
+      {
+        "month": "2025-01",
+        "incomeCents": 450000,
+        "expenseCents": 895902
+      },
+      {
+        "month": "2025-02",
+        "incomeCents": 450000,
+        "expenseCents": 788046
+      },
+      {
+        "month": "2025-03",
+        "incomeCents": 450000,
+        "expenseCents": 839420
+      },
+      {
+        "month": "2025-04",
+        "incomeCents": 450000,
+        "expenseCents": 727606
+      },
+      {
+        "month": "2025-05",
+        "incomeCents": 450000,
+        "expenseCents": 784415
+      },
+      {
+        "month": "2025-06",
+        "incomeCents": 450000,
+        "expenseCents": 812357
+      },
+      {
+        "month": "2025-07",
+        "incomeCents": 450000,
+        "expenseCents": 875465
+      },
+      {
+        "month": "2025-08",
+        "incomeCents": 450000,
+        "expenseCents": 860209
+      },
+      {
+        "month": "2025-09",
+        "incomeCents": 450000,
+        "expenseCents": 576274
+      }
+    ],
+    "spendingByCategory": [
+      {
+        "category": "Salary",
+        "amountCents": 0
+      },
+      {
+        "category": "Bonus",
+        "amountCents": 0
+      },
+      {
+        "category": "Investments",
+        "amountCents": 0
+      },
+      {
+        "category": "Housing",
+        "amountCents": 2160000
+      },
+      {
+        "category": "Transportation",
+        "amountCents": 1113592
+      },
+      {
+        "category": "Groceries",
+        "amountCents": 2729477
+      },
+      {
+        "category": "Dining",
+        "amountCents": 2060697
+      },
+      {
+        "category": "Utilities",
+        "amountCents": 447033
+      },
+      {
+        "category": "Healthcare",
+        "amountCents": 275533
+      },
+      {
+        "category": "Entertainment",
+        "amountCents": 853180
+      },
+      {
+        "category": "Travel",
+        "amountCents": 269021
+      }
+    ]
+  },
+  "rules": [
+    {
+      "id": "6306f0c8-2d08-40ab-a46c-a20a0f075fdf",
+      "name": "Auto-categorize Starbucks",
+      "predicate": "merchant CONTAINS 'Starbucks'",
+      "action": "categorize:Dining",
+      "active": true
+    },
+    {
+      "id": "c990c71b-81b0-4b9f-aed4-95edf1c140a0",
+      "name": "Fuel to Transportation",
+      "predicate": "merchant IN ['Shell Fuel','Exxon']",
+      "action": "categorize:Transportation",
+      "active": true
+    },
+    {
+      "id": "36d389e0-756e-4ad8-b8b2-a7a256524305",
+      "name": "Round-up Investments",
+      "predicate": "amountCents < 0",
+      "action": "transfer:Brokerage:roundup",
+      "active": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "38634271-88bd-4f78-9bd1-ec2ef92a856a",
+      "type": "BUDGET_THRESHOLD",
+      "message": "Groceries hit 80% of monthly budget",
+      "createdAt": "2025-09-19T09:31:19.598865Z",
+      "read": false
+    },
+    {
+      "id": "e8be0996-515c-4626-8168-937c7604df51",
+      "type": "IMPORT_COMPLETE",
+      "message": "CSV import finished: 125 transactions",
+      "createdAt": "2025-09-12T09:31:19.598865Z",
+      "read": true
+    },
+    {
+      "id": "a2828366-9e2e-4dbd-ad21-d186a367967e",
+      "type": "RULES_SUGGESTION",
+      "message": "New rule suggested for merchant 'H\u2011E\u2011B'",
+      "createdAt": "2025-09-21T09:31:19.598865Z",
+      "read": false
+    }
+  ],
+  "imports": [
+    {
+      "id": "37d2cfb8-172a-42cf-b284-f43f993ad959",
+      "filename": "chase_2025-06.csv",
+      "status": "COMPLETED",
+      "processed": 125,
+      "errors": 0,
+      "createdAt": "2025-09-12T09:31:19.598865Z"
+    },
+    {
+      "id": "60d5afd3-bee0-4a58-862a-fa71ac8fa945",
+      "filename": "amex_2025-07.csv",
+      "status": "FAILED",
+      "processed": 0,
+      "errors": 3,
+      "createdAt": "2025-09-17T09:31:19.598865Z"
+    },
+    {
+      "id": "1507db07-213c-40b2-b6f2-11c560fdef3f",
+      "filename": "fidelity_2025-07.xls",
+      "status": "COMPLETED",
+      "processed": 42,
+      "errors": 1,
+      "createdAt": "2025-09-20T09:31:19.598865Z"
+    }
+  ],
+  "goals": [
+    {
+      "id": "c2147949-6e59-4a54-8bd0-85ced3d24e00",
+      "name": "Emergency Fund",
+      "targetCents": 1000000,
+      "currentCents": 0,
+      "dueDate": "2026-09-22T09:31:19.598865Z"
+    },
+    {
+      "id": "4cc078d1-61c9-4bff-8c99-9de3d100cd12",
+      "name": "Car Payoff",
+      "targetCents": 0,
+      "currentCents": 81482,
+      "dueDate": "2027-03-16T09:31:19.598865Z"
+    }
+  ],
+  "fx": {
+    "base": "USD",
+    "asOf": "2025-09-22T09:31:19.598865Z",
+    "rates": {
+      "USD": 1.0,
+      "NGN": 1600.0,
+      "EUR": 0.92
+    }
+  },
+  "suggestions": {
+    "merchantsToRule": [
+      "H\u2011E\u2011B",
+      "Kroger",
+      "Starbucks",
+      "Shell Fuel"
+    ],
+    "duplicateCandidates": []
+  }
+}
