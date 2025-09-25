@@ -1,4 +1,3 @@
-// src/main/java/com/example/finance/assistantservice/service/VectorSearchService.java
 package com.example.finance.assistantservice.service;
 
 import com.example.finance.assistantservice.model.Chunk;

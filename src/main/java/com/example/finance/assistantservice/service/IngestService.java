@@ -3,9 +3,11 @@ package com.example.finance.assistantservice.service;
 
 import com.example.finance.assistantservice.model.Chunk;
 import com.example.finance.assistantservice.repo.ChunkRepository;
+import com.example.finance.assistantservice.webdto.AccountDto;
+import com.example.finance.assistantservice.webdto.TokenResponse;
+import com.example.finance.assistantservice.webdto.TransactionDto;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.langchain4j.data.embedding.Embedding;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.data.embedding.Embedding;
@@ -15,7 +17,6 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +24,7 @@ public class IngestService {
 
     private final EmbeddingModel embeddingModel;
     private final ChunkRepository repo;
+    private final BankApiClient bankApiClient;
     private final ObjectMapper om = new ObjectMapper();
 
     public int ingestFile(Path path) throws Exception {
@@ -49,6 +51,61 @@ public class IngestService {
                     .build());
         }
         repo.deleteAll(); // clean slate for demo
+        repo.saveAll(toSave);
+        return toSave.size();
+    }
+
+    /**
+     * Ingest data by calling remote APIs: token -> accounts -> transactions.
+     * The endpoints and client info are passed in, so controller can bind from
+     * config/request.
+     */
+    public int ingestFromApis(String tokenUrl,
+            String clientId,
+            String clientSecret,
+            String scope,
+            String username,
+            String password,
+            String accountsUrl,
+            String transactionsUrl) throws Exception {
+
+        TokenResponse token = bankApiClient.fetchToken(tokenUrl, clientId, clientSecret, username, password, scope);
+        String accessToken = token.accessToken();
+
+        List<AccountDto> accounts = bankApiClient.fetchAccounts(accountsUrl, accessToken);
+        List<TransactionDto> txns = bankApiClient.fetchTransactions(transactionsUrl, accessToken);
+
+        // Build meaningful text for RAG: include normalized amounts and ISO dates
+        List<String> docs = new ArrayList<>();
+        for (AccountDto a : accounts) {
+            docs.add(String.format("Account %s (%s) at %s, balance: %s cents, currency: %s, created: %s",
+                    a.id(), a.name(), a.institution(), a.balanceCents(), a.currency(),
+                    a.createdAt() != null ? a.createdAt() : "unknown"));
+        }
+        for (TransactionDto t : txns) {
+            docs.add(String.format("Transaction: %s spent %s cents %s on %s (account %s) note: %s",
+                    t.merchant() != null ? t.merchant() : "unknown-merchant",
+                    t.amountCents() != null ? t.amountCents() : 0,
+                    t.currency() != null ? t.currency() : "USD",
+                    t.occurredAt() != null ? t.occurredAt().toLocalDate() : "unknown-date",
+                    t.accountId(),
+                    t.note() != null ? t.note() : ""));
+        }
+
+        List<String> chunks = chunk(docs, 800);
+        List<TextSegment> segments = chunks.stream().map(TextSegment::from).toList();
+        List<Embedding> embs = embeddingModel.embedAll(segments).content();
+
+        List<Chunk> toSave = new ArrayList<>();
+        for (int i = 0; i < chunks.size(); i++) {
+            toSave.add(Chunk.builder()
+                    .docId("remote-apis")
+                    .text(chunks.get(i))
+                    .embedding(toList(embs.get(i)))
+                    .metadata(Map.of("source", "apis", "pos", i))
+                    .build());
+        }
+        repo.deleteAll();
         repo.saveAll(toSave);
         return toSave.size();
     }
